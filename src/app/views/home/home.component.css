@@ -1,0 +1,17 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.toolbar-FontSize{
+  font-size: 1.5rem;
+  height: 80px;
+}
+
+.background-toolbar{
+  background: #8ccc0b;
+  color: #FFFFFF;
+}
+
+.color-avocado{
+  color: #8ccc0b;
+}
