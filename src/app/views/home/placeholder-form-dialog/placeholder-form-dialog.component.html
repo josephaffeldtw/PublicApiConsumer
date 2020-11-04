@@ -1,4 +1,28 @@
-<h1 mat-dialog-title>Hi Jo</h1>
+<h1 mat-dialog-title>Novo Placeholder</h1>
+<div mat-dialog-content>
+  <form class="exemple-form" [formGroup]="forms">
+    <mat-form-field class="exemple-form-width">
+      <mat-label>User ID</mat-label>
+      <input matInput formControlName="userId" name="userId">
+    </mat-form-field>
+
+    <mat-form-field class="exemple-form-width">
+      <mat-label>ID</mat-label>
+      <input matInput formControlName="id" name="id">
+    </mat-form-field>
+
+    <mat-form-field class="exemple-form-width">
+      <mat-label>Title</mat-label>
+      <input matInput formControlName="title" name="title">
+    </mat-form-field>
+
+    <mat-form-field class="exemple-form-width">
+      <mat-label>Body</mat-label>
+      <input matInput formControlName="body" name="body">
+    </mat-form-field>
+  </form>
+</div>
 <div mat-dialog-actions>
+  <button mat-button color="primary" (click)="createPlaceholder()">Adicionar</button>
   <button mat-button (click)="cancel()">No Thanks</button>
 </div>
