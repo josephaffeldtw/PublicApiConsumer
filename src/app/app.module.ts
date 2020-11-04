@@ -11,12 +11,15 @@ import { MatButtonModule } from '@angular/material/button';
 import { ApiListComponent } from './views/home/api-list/api-list.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { HttpClientModule } from '@angular/common/http';
+import { MatDialogModule } from '@angular/material/dialog';
+import { PlaceholderFormDialogComponent } from './views/home/placeholder-form-dialog/placeholder-form-dialog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ApiListComponent
+    ApiListComponent,
+    PlaceholderFormDialogComponent
   ],
   imports: [
     HttpClientModule,
@@ -26,7 +29,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    MatTabsModule
+    MatTabsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
